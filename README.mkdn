@@ -1,0 +1,152 @@
+# 🏛️ The Law
+
+**Frédéric Bastiat • 1850**
+
+> *“The law is the organization of the natural right of lawful defense.”*
+
+An **[Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)** knowledge bundle that turns Bastiat’s classic essay into a richly-linked, machine-readable concept graph.
+
+---
+
+## ✨ What’s Here
+
+This repository is a **git-friendly, human-readable + agent-friendly** representation of Bastiat’s argument:
+
+- **True purpose of law** — the collective organization of defense for natural rights (life, liberty, property).
+- **Legal plunder** — when law is perverted by greed or “false philanthropy” into an instrument that takes from some to give to others.
+- **Consequences** of perverted law and the case for returning government to its strictly negative, protective sphere.
+
+The content is organized as a navigable directory tree of Markdown files with YAML frontmatter, extensive bidirectional cross-links, and computed graph analytics.
+
+---
+
+## 🧠 Core Argument at a Glance
+
+```mermaid
+flowchart TD
+    subgraph True Law
+        TL[Law as Organization<br/>of Collective Defense]
+        NR[Natural Rights<br/>Life • Liberty • Property]
+    end
+
+    subgraph Perversion
+        FP[False Philanthropy]
+        GR[Greed & Political Struggle]
+        LP[Legal Plunder]
+    end
+
+    subgraph Consequences
+        DM[Demoralization of Citizens]
+        CC[Class Conflict]
+        RS[Rent-Seeking]
+        EI[Economic Impoverishment]
+        ER[Effacing of Justice]
+    end
+
+    TL --> NR
+    NR -->|When perverted| LP
+    FP --> LP
+    GR --> LP
+
+    LP --> DM
+    LP --> CC
+    LP --> RS
+    LP --> EI
+    LP --> ER
+
+    style TL fill:#d1fae5,stroke:#10b981
+    style LP fill:#fee2e2,stroke:#ef4444
+    style Consequences fill:#fef3c7,stroke:#f59e0b
+```
+
+**Key insight**: Law is either a shield for everyone’s rights… or a sword for some people’s desires.
+
+---
+
+## 📁 Bundle Structure
+
+```mermaid
+mindmap
+  root((The Law))
+    Fundamental Principles
+      Natural Rights
+      Law as Defense
+      Collective Force
+    Legal Plunder
+      Definition
+      Manifestations
+        Tariffs
+        Subsidies
+        Welfare
+        Public Schools
+        ...
+      Consequences
+        Demoralization
+        Rent-seeking
+        Class Conflict
+        Instability
+    True Law
+      Proper Sphere
+      Negative Role
+      Limited Government
+    Perversion of Law
+      Causes
+      Socialism Critique
+    Modern Relevance
+      Contemporary Plunder
+      Lessons for Today
+    Key Extracts & Context
+```
+
+See the full navigation in [`index.md`](index.md).
+
+---
+
+## 🛠️ OKF Tooling &amp; Value Added
+
+This bundle was enhanced using the [`dnx okf`](https://github.com/devlooped/okf) toolchain:
+
+| Feature                  | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **Graph Model**          | All Markdown links → directed edges automatically                           |
+| **Centrality Analytics** | PageRank + degree metrics highlight the most structurally important ideas   |
+| **Validation**           | `dnx okf check` verifies frontmatter, structure, and link integrity         |
+| **Visualization**        | Self-contained interactive `index.html` (node-link diagram)                 |
+
+### Top-ranked concepts (by structural importance)
+
+1. `legal-plunder/definition` — the heart of the thesis
+2. `the-law` — primary entry point
+3. `true-law/proper-sphere`
+4. `fundamental-principles/law-as-organization-of-defense`
+5. `fundamental-principles/natural-rights`
+
+---
+
+## 📦 Generated Artifacts
+
+- **`okf.json`** — Complete machine-readable graph (nodes + edges + analytics). Perfect for agents, queries, or further processing.
+- **`index.html`** — Beautiful interactive visualization. Open it locally to explore the knowledge graph.
+
+---
+
+## 🚀 Explore
+
+- Start with the [main essay overview](the-law.md)
+- Browse by section via [`index.md`](index.md)
+- Open `index.html` for the visual map
+- Follow the cross-links — every important idea is deliberately connected
+
+---
+
+## 📖 Sources &amp; Further Reading
+
+- [The Law at the Mises Institute](https://mises.org/library/book/law)
+- [OKF Specification](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+- [OKF toolchain (devlooped/okf)](https://github.com/devlooped/okf)
+
+---
+
+**This bundle demonstrates how classic ideas can be represented in a durable, linkable, and computable way — while remaining pure, readable Markdown.**
+
+*Built with care for clarity, connectivity, and longevity.*
