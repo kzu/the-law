@@ -111,7 +111,7 @@ This bundle was enhanced using the [`dnx okf`](https://github.com/devlooped/okf)
 | **Graph Model**          | All Markdown links → directed edges automatically                           |
 | **Centrality Analytics** | PageRank + degree metrics highlight the most structurally important ideas   |
 | **Validation**           | `dnx okf check` verifies frontmatter, structure, and link integrity         |
-| **Visualization**        | Self-contained interactive `index.html` (node-link diagram)                 |
+| **Visualization**        | Self-contained interactive `index.html` (node-link diagram). [Live hosted version](https://www.cazzulino.com/the-law/) |
 
 ### Top-ranked concepts (by structural importance)
 
@@ -126,7 +126,7 @@ This bundle was enhanced using the [`dnx okf`](https://github.com/devlooped/okf)
 ## 📦 Generated Artifacts
 
 - **`okf.json`** — Complete machine-readable graph (nodes + edges + analytics). Perfect for agents, queries, or further processing.
-- **`index.html`** — Beautiful interactive visualization. Open it locally to explore the knowledge graph.
+- **`index.html`** — Beautiful interactive visualization, also hosted live via GitHub Pages at [https://www.cazzulino.com/the-law/](https://www.cazzulino.com/the-law/)
 
 ---
 
@@ -134,7 +134,8 @@ This bundle was enhanced using the [`dnx okf`](https://github.com/devlooped/okf)
 
 - Start with the [main essay overview](the-law.md)
 - Browse by section via [`index.md`](index.md)
-- Open `index.html` for the visual map
+- [Live visualization](https://www.cazzulino.com/the-law/)
+- Open `index.html` locally for the visual map
 - Follow the cross-links — every important idea is deliberately connected
 
 ---
